@@ -1,4 +1,4 @@
-
+import 'package:examen_flutter_dam2/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,6 +11,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Examen Flutter',
+      initialRoute: AppRoutes.home,
+      routes: AppRoutes.routes,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,

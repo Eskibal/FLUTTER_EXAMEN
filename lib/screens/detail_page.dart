@@ -4,14 +4,14 @@ class DetailPage extends StatelessWidget {
   final int index;
   final String text;
 
-  const DetailPage();
+  const DetailPage({super.key, required this.index, required this.text});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Center(
-        child: Text(
-          'Elemento:???',
+        child: Text("Elemento ${index}: ${text}",
           style: const TextStyle(fontSize: 24),
         ),
       ),

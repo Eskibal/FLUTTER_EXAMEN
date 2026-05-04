@@ -34,7 +34,7 @@ class ListPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (_) => Home(),
+                        builder: (_) => DetailPage(index: index, text: _items[index],),
                       ),
                     );
                   },
